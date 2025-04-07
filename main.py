@@ -5,7 +5,8 @@ from common.qam_helpers import seq_to_qam16, qam16_to_seq
 from common.orthoganality_helpers import walsh_hadamard
 from common.tx_path_helpers import add_noise
 
-# Generate random QAM symbols for each user (e.g., 8 symbols per user)
+# Generate random QAM symbols for each user 
+# akin to qam16 modulation scheme for each subcarrier
 num_symbols = 8
 user1_seq = np.random.randint(0, 16, num_symbols)
 user2_seq = np.random.randint(0, 16, num_symbols)
